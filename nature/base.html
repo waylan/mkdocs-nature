@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 
+{%- macro nav_item(item) %}
+    {%- if item.active %}
+        <li class="nav-item">
+        {%- if item.url %}
+            <a href="{{ item.url }}">{{ item.title }}</a>
+        {%- else %}
+            {{ item.title }}
+        {%- endif %}
+         &#187; </li>
+        {%- for child in item.children %}
+            {{ nav_item(child)}}
+        {%- endfor %}
+    {%- endif %}
+{%- endmacro %}
+
 {%- macro relbar() %}
     <div class="related" role="navigation" aria-label="related navigation">
         <h3>Navigation</h3>
@@ -13,9 +28,16 @@
             {% if page and page.previous_page %}<li class="right">
                 <a href="{{ page.previous_page.url }}" title="{{ page.previous_page.title }}" accesskey="P">previous</a> |
             </li>{% endif %}
+            {% if config.extra.icon %}<li><img src="{{ base_url }}/{{ config.extra.icon }}"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>{% endif %}
             <li class="nav-item nav-item-0">
                 <a href="{{ nav.homepage.url }}">{{ config.site_name }}</a> &#187;
-            </li> 
+            </li>
+            {%- if page and not page.is_homepage %}
+                {%- for item in nav %}
+                    {{ nav_item(item) }}
+                {%- endfor %}
+            {%- endif %}
         </ul>
     </div>  
 {%- endmacro %}
