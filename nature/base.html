@@ -100,7 +100,6 @@
       {%- block styles %}
         <link rel="stylesheet" href="{{ base_url }}/static/nature.css" type="text/css" />
         <link rel="stylesheet" href="{{ base_url }}/static/pygments.css" type="text/css" />
-        <link rel="stylesheet" href="{{ base_url }}/static/font-awesome-4.5.0.css" type="text/css" />
         {%- for path in extra_css %}
         <link rel="stylesheet" href="{{ path }}" type="text/css" />
         {%- endfor %}
@@ -109,7 +108,7 @@
       {%- block libs %}
         <script type="text/javascript" src="{{ base_url }}/static/jquery.js"></script>
         <script type="text/javascript" src="{{ base_url }}/static/underscore.js"></script>
-        <script type="text/javascript" src="{{ base_url }}/static/doctools.js"></script>
+        <!-- <script type="text/javascript" src="{{ base_url }}/static/doctools.js"></script> -->
       {%- endblock %}
 
       {%- block analytics %}
