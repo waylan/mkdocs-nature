@@ -19,9 +19,22 @@
     <div class="related" role="navigation" aria-label="related navigation">
         <h3>Navigation</h3>
         <ul>
-            {# <li class="right" style="margin-right: 10px">
+            {%- block repo %}
+            {%- if config.repo_url %}
+                <li class="right" style="margin-right: 10px">
+                    <a href="{{ config.repo_url }}" title="View this project on {{ config.repo_name }}">
+                    {%- if config.repo_name == 'GitHub' -%}
+                        <img src={{ base_url }}/static/github.png width=16px style="vertical-align: middle; margin-top: -1px" />
+                    {%- elif config.repo_name == 'Bitbucket' -%}
+                        <img src={{ base_url }}/static/bitbucket.png width=16px style="vertical-align: middle; margin-top: -1px" />
+                    {%- endif -%}
+                    </a>
+                </li>
+            {%- endif %}
+            {%- endblock %}
+            <li class="right" style="margin-right: 10px">
                 <a href="genindex.html" title="General Index" accesskey="I">index</a>
-            </li> #}
+            </li>
             {% if page and page.next_page %}<li class="right">
                 <a href="{{ page.next_page.url }}" title="{{ page.next_page.title }}" accesskey="N">next</a> |
             </li>{% endif %}
@@ -91,14 +104,17 @@
             {%- endif %}
             {%- endblock %}
             
-            {% if page and page.edit_url %}
             <div role="note" aria-label="source link">
                 <h3>This Page</h3>
                 <ul class="this-page-menu">
+                    {%- if config.extra.issue_tracker %}
+                    <li><a href="{{ config.extra.issue_tracker }}">Report a Bug</a></li>
+                    {%- endif %}
+                    {%- if page and page.edit_url %}
                     <li><a href="{{ page.edit_url }}">Edit on {{ config.repo_name }}</a></li>
+                    {%- endif %}
                 </ul>
             </div>
-            {% endif %}
                      
             <div id="searchbox" style="display: none" role="search">
                 <h3>Quick search</h3>

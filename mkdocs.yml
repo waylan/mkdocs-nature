@@ -10,6 +10,7 @@ copyright: "Copyright &copy; 2017"
 theme: nature
 
 extra:
+    issue_tracker: https://github.com/waylan/mkdocs-nature/issues
     icon: icon.png
     # logo: logo.png
 
