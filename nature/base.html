@@ -20,6 +20,19 @@
     </div>  
 {%- endmacro %}
 
+{%- macro toc_item(item) %}
+    <li>
+        <a class="reference internal" href="{{ item.url }}">{{ item.title }}</a>
+        {%- if item.children %}
+        <ul>
+        {%- for child in item.children %}
+            {{ toc_item(child) }}
+        {%- endfor %}
+        </ul>
+        {%- endif %}
+    </li>
+{%- endmacro %}
+
 {%- macro sidebar() %}
     <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
@@ -34,8 +47,8 @@
             {%- if page and page.toc %}
             <h3><a href="index.html">Table Of Contents</a></h3>
             <ul>
-            {%- for toc_item in page.toc %}
-                {% include "toc_item.html" %}
+            {%- for item in page.toc %}
+                {{ toc_item(item) }}
             {%- endfor %}
             </ul>
             {%- endif %}
