@@ -1,0 +1,10 @@
+<li>
+    <a class="reference internal" href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+    {%- if toc_item.children %}
+    <ul>
+    {%- for toc_item in toc_item.children %}
+        {% include "toc_item.html" %}
+    {%- endfor %}
+    </ul>
+    {%- endif %}
+</li>
