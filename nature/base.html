@@ -33,7 +33,7 @@
             {%- endif %}
             {%- endblock %}
             <li class="right" style="margin-right: 10px">
-                <a href="genindex.html" title="General Index" accesskey="I">index</a>
+                <a href="sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             {% if page and page.next_page %}<li class="right">
                 <a href="{{ page.next_page.url }}" title="{{ page.next_page.title }}" accesskey="N">next</a> |
@@ -137,8 +137,7 @@
         {% if page and page.is_homepage %}<meta name="description" content="{{ config['site_description'] }}">{% endif %}
         {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
         {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
-        {% if config.site_favicon %}<link rel="shortcut icon" href="{{ base_url }}/{{ config.site_favicon }}">
-        {% else %}<link rel="shortcut icon" href="{{ base_url }}/favicon.ico">{% endif %}
+        <link rel="shortcut icon" href="{{ base_url }}/favicon.ico">
         <link rel="search" title="Search" href="{{ base_url }}/search.html" />
         {% if page and page.next_page %}<link rel="next" title="{{ page.next_page.title }}" href="{{ page.next_page.url }}" />{% endif %}
         {% if page and page.previous_page %}<link rel="prev" title="{{ page.previous_page.title }}" href="{{ page.previous_page.url }}" />{% endif %}

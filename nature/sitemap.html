@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{%- macro nav_item(item) %}
+    <li class="nav-item">
+    {%- if item.url %}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    {%- else %}
+        {{ item.title }}
+    {%- endif %}
+    {%- if item.children %}
+        <ul>
+        {%- for child in item.children %}
+            {{ nav_item(child) }}
+        {%- endfor %}
+        </ul>
+    {%- endif %}
+    </li>
+{%- endmacro %}
+
+{%- block content %}
+    <h1 id="index">Index</h1>
+    <ul>
+    {%- for item in nav %}
+        {{ nav_item(item) }}
+    {%- endfor %}
+    </ul>
+{%- endblock %}

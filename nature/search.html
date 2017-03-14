@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{%- block content %}
+    <h1 id="search-documentation">Search</h1>
+    <div id="fallback" class="admonition warning">
+        <script type="text/javascript">$('#fallback').hide();</script>
+        <p>
+            Please activate JavaScript to enable the search
+            functionality.
+        </p>
+    </div>
+    <p>
+        From here you can search these documents. Enter your search
+        words into the box below and click "search". 
+    </p>
+    <form action="" method="get">
+        <input type="text" name="q" value="" />
+        <input type="submit" value="search" />
+        <span id="search-progress" style="padding-left: 10px"></span>
+    </form>
+  
+    <div id="search-results">
+        <!-- sample search results:
+        <h2>Search Results</h2>
+        <p>Search finished, found 2 page(s) matching the search query.</p>
+        <ul class="search">
+            <li><a href="features.html?highlight=feature">Features</a></li>
+            <li><a href="index.html?highlight=feature">Welcome to MyProject’s documentation!</a></li>
+        </ul>
+        -->
+    </div>
+{%- endblock %}
