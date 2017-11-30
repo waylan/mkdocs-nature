@@ -13,6 +13,7 @@ setup(
     author_email='waylan.limberg@icloud.com',
     packages=find_packages(),
     include_package_data=True,
+    install_requires=['mkdocs>=0.17'],
     entry_points={
         'mkdocs.themes': [
             'nature = nature',
