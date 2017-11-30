@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        
+        <meta name="author" content="Waylan Limberg">
+        
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="search" title="Search" href="../search.html" />
+        <link rel="next" title="The Project" href="../about/" />
+        <link rel="prev" title="MkDocs-Nature" href=".." />
+        <title>Features &#8212; MkDocs-Nature 0.1.0 documentation</title>
+        <link rel="stylesheet" href="../static/nature.css" type="text/css" />
+        <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+        <script type="text/javascript" src="../static/jquery.js"></script>
+        <script type="text/javascript" src="../static/underscore.js"></script>
+        <!-- <script type="text/javascript" src="../static/doctools.js"></script> --> 
+    </head>
+
+    <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/waylan/mkdocs-nature/" title="View this project on GitHub"><img src=../static/github.png width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../about/" title="The Project" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href=".." title="MkDocs-Nature" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../icon.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="..">MkDocs-Nature 0.1.0 documentation</a> &#187;
+            </li>
+                    
+                    
+        <li class="nav-item">
+            <a href="./">Features</a>
+         &#187; </li>
+                    
+        </ul>
+    </div>
+
+        <div class="document">
+            <div class="documentwrapper">
+                <div class="bodywrapper">
+                    <div class="body" role="main"><h1 id="features">Features<a class="headerlink" href="#features" title="Permanent link">§</a></h1>
+<p>The MkDocs-Nature theme supports a number of features which are configurable by
+the end user.</p>
+<ul>
+<li><a href="#theme-variables">Theme Variables</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#code-highlighting">Code Highlighting</a></li>
+</ul>
+<h2 id="theme-variables">Theme Variables<a class="headerlink" href="#theme-variables" title="Permanent link">§</a></h2>
+<p>The theme includes support for a few variables which can be set by the user to
+control the theme's behavior.</p>
+<h3 id="themeicon">theme.icon<a class="headerlink" href="#themeicon" title="Permanent link">§</a></h3>
+<p>Point this setting at an image file in your <code>docs_dir</code> to display an icon in
+your documentation.</p>
+<div class="codehilite"><pre><span></span><span class="n">theme</span><span class="o">:</span>
+    <span class="n">name</span><span class="o">:</span> <span class="n">nature</span>
+    <span class="n">icon</span><span class="o">:</span> <span class="n">icon</span><span class="o">.</span><span class="na">png</span>
+</pre></div>
+
+
+<h3 id="themelogo">theme.logo<a class="headerlink" href="#themelogo" title="Permanent link">§</a></h3>
+<p>Point this setting at an image file in your <code>docs_dir</code> to display logo in
+your documentation.</p>
+<div class="codehilite"><pre><span></span><span class="n">theme</span><span class="o">:</span>
+    <span class="n">name</span><span class="o">:</span> <span class="n">nature</span>
+    <span class="n">logo</span><span class="o">:</span> <span class="n">logo</span><span class="o">.</span><span class="na">png</span>
+</pre></div>
+
+
+<h3 id="themerelease">theme.release<a class="headerlink" href="#themerelease" title="Permanent link">§</a></h3>
+<p>Use this setting to include the version of the project you are documenting in
+your documentation.</p>
+<div class="codehilite"><pre><span></span><span class="n">theme</span><span class="o">:</span>
+    <span class="n">name</span><span class="o">:</span> <span class="n">nature</span>
+    <span class="n">release</span><span class="o">:</span> <span class="s1">&#39;2.1.3&#39;</span>
+</pre></div>
+
+
+<h3 id="themeissue_tracker">theme.issue_tracker<a class="headerlink" href="#themeissue_tracker" title="Permanent link">§</a></h3>
+<p>Assign the URL for your issue tracker to this setting to include a "Report a
+Bug" link on each page. For example, if you use GitHub to track issues:</p>
+<div class="codehilite"><pre><span></span><span class="n">theme</span><span class="o">:</span>
+    <span class="n">name</span><span class="o">:</span> <span class="n">nature</span>
+    <span class="n">issue_tracker</span><span class="o">:</span> <span class="n">https</span><span class="o">://</span><span class="n">github</span><span class="o">.</span><span class="na">com</span><span class="sr">/user/project/iss</span><span class="n">ues</span>
+</pre></div>
+
+
+<h3 id="repo_url">repo_url<a class="headerlink" href="#repo_url" title="Permanent link">§</a></h3>
+<p>Assign the URL for your repository to this setting to include a link on each
+page. See MkDocs' <a href="http://www.mkdocs.org/user-guide/configuration/#repo_url">documentation</a> for more details.</p>
+<h3 id="edit_uri">edit_uri<a class="headerlink" href="#edit_uri" title="Permanent link">§</a></h3>
+<p>When set, an "edit this page" link is included on each page. Note that if the
+<code>repo_url</code> points to either GitHub or Bitbucket, this setting is automatically
+configured and does not need to be set manually. See MkDocs' <a href="http://www.mkdocs.org/user-guide/configuration/#edit_uri">documentation</a>
+for more details.</p>
+<h3 id="copyright">copyright<a class="headerlink" href="#copyright" title="Permanent link">§</a></h3>
+<p>Assign the text to be used as a copyright notice in the footer of each page. For
+example:</p>
+<div class="codehilite"><pre><span></span><span class="nt">copyright</span><span class="o">:</span> <span class="s2">&quot;Copyright &amp;copy; 2017&quot;</span>
+</pre></div>
+
+
+<h3 id="site_author">site_author<a class="headerlink" href="#site_author" title="Permanent link">§</a></h3>
+<p>Assign the name to be included with the copyright notice on each page. This
+setting is ignored if <code>copyright</code> is not also set.</p>
+<h2 id="search">Search<a class="headerlink" href="#search" title="Permanent link">§</a></h2>
+<p>The MkDocs-Nature theme includes support for MkDocs search plugin. As long as
+the search plugin is enabled (MkDocs' default), a search page will be generated
+and included in your site. If you would like to disable search, then disable the
+search plugin by defining a <code>plugins</code> setting which does not include <code>search</code>.
+If you have no other plugins, then set <code>plugins</code> to an empty list:</p>
+<div class="codehilite"><pre><span></span>plugins: []
+</pre></div>
+
+
+<h2 id="permalinks">Permalinks<a class="headerlink" href="#permalinks" title="Permanent link">§</a></h2>
+<p>To enable permalinks to appear when hovering over any page or section headers,
+you need to enable the relevant configuration setting for the TOC extension of
+Python-Markdown.</p>
+<div class="codehilite"><pre><span></span>markdown_extensions:
+    - toc:
+        permalink: true
+</pre></div>
+
+
+<p>By default, the pilcrow or paragraph sign (&para;) is used for the permalink. If
+you would like different text, set <code>permalink</code> to your desired string instead of
+<code>true</code>. For example setting it to <code>§</code> would display the section sign.</p>
+<h2 id="admonitions">Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">§</a></h2>
+<p>The appropriate CSS styles are defined to support the <code>admonition</code> extension to
+Python-Markdown. To utilize admonitions, enable the extension in your config
+file:</p>
+<div class="codehilite"><pre><span></span>markdown_extensions:
+    - admonition
+</pre></div>
+
+
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>See the Admonition Extension <a href="https://pythonhosted.org/Markdown/extensions/admonition.html#syntax">documentation</a> for specifics on the syntax.</p>
+</div>
+<h2 id="code-highlighting">Code Highlighting<a class="headerlink" href="#code-highlighting" title="Permanent link">§</a></h2>
+<p>By enabling the <code>codehilite</code> extension in your <code>mkdocs.yml</code> config file you get
+syntax highlighting support using Pygments' Tango theme.</p>
+<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">§</a></h3>
+<p>Enable the <code>codehilite</code> extension in your <code>mkdocs.yml</code> config file:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite</span>
+</pre></div>
+
+
+<h3 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">§</a></h3>
+<p>For best results, be sure to identify the language of each code block in your
+Markdown files.</p>
+<h4 id="javascript-sample">JavaScript Sample<a class="headerlink" href="#javascript-sample" title="Permanent link">§</a></h4>
+<p>For example, by using the following Markdown:</p>
+<div class="codehilite"><pre><span></span>```javascript
+alert(&quot;A JavaScript Alert!&quot;);
+```
+</pre></div>
+
+
+<p>Your codeblock will render as:</p>
+<div class="codehilite"><pre><span></span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;A JavaScript Alert!&quot;</span><span class="p">);</span>
+</pre></div>
+
+
+<h4 id="html-sample">HTML Sample<a class="headerlink" href="#html-sample" title="Permanent link">§</a></h4>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Hello, World!<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, World!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<h4 id="python-sample">Python Sample<a class="headerlink" href="#python-sample" title="Permanent link">§</a></h4>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">print</span> <span class="sa">u</span><span class="s2">&quot;Hello, {}!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">hello</span><span class="p">(</span><span class="s1">&#39;World&#39;</span><span class="p">)</span>
+<span class="sa">u</span><span class="s1">&#39;Hello, World!&#39;</span>
+</pre></div>
+
+                    </div>
+                </div>
+            </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+                
+    <li>
+        <a class="reference internal" href="#features">Features</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#theme-variables">Theme Variables</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#themeicon">theme.icon</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#themelogo">theme.logo</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#themerelease">theme.release</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#themeissue_tracker">theme.issue_tracker</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#repo_url">repo_url</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#edit_uri">edit_uri</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#copyright">copyright</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#site_author">site_author</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#search">Search</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#permalinks">Permalinks</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#admonitions">Admonitions</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#code-highlighting">Code Highlighting</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#configuration">Configuration</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#usage">Usage</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#javascript-sample">JavaScript Sample</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#html-sample">HTML Sample</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#python-sample">Python Sample</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+            </ul>
+            
+            <h4>Previous topic</h4>
+            <p class="topless">
+                <a href=".." title="previous page">MkDocs-Nature</a>
+            </p>
+
+            
+            <h4>Next topic</h4>
+            <p class="topless">
+                <a href="../about/" title="next page">The Project</a>
+            </p>
+
+            <div role="note" aria-label="source link">
+                <h3>This Page</h3>
+                <ul class="this-page-menu">
+                    <li><a href="https://github.com/waylan/mkdocs-nature/issues">Report a Bug</a></li>
+                    <li><a href="https://github.com/waylan/mkdocs-nature/edit/master/docs/features.md">Edit on GitHub</a></li>
+                </ul>
+            </div>
+            <div id="searchbox" style="display: none" role="search">
+                <h3>Quick search</h3>
+                <form class="search" action="../search.html" method="get">
+                    <div><input type="text" name="q" placeholder="Search docs" /></div>
+                    <div><input type="submit" value="Go" /></div>
+                </form>
+            </div>
+            <script type="text/javascript">$('#searchbox').show(0);</script>
+
+        </div>
+    </div>
+
+            <div class="clearer"></div>
+        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/waylan/mkdocs-nature/" title="View this project on GitHub"><img src=../static/github.png width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../about/" title="The Project" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href=".." title="MkDocs-Nature" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../icon.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="..">MkDocs-Nature 0.1.0 documentation</a> &#187;
+            </li>
+                    
+                    
+        <li class="nav-item">
+            <a href="./">Features</a>
+         &#187; </li>
+                    
+        </ul>
+    </div>
+        <div class="footer" role="contentinfo">Copyright &copy; 2017, Waylan Limberg.
+        Created using <a href="http://www.mkdocs.org/">MkDocs</a> 0.17.2.
+        </div>
+        <script>var base_url = '..';</script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <!--
+        MkDocs version      : 0.17.2
+        Docs Build Date UTC : 2017-11-30 21:00:05
+        -->
+    </body>
+</html>
