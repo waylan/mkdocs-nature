@@ -6,7 +6,7 @@ VERSION = '0.1.0'
 setup(
     name="mkdocs-nature",
     version=VERSION,
-    url='',
+    url='https://waylan.github.io/mkdocs-nature/',
     license='BSD',
     description='A MkDocs theme. A clone of the "greenish" Sphinx theme of the same name.',
     author='Waylan Limberg',

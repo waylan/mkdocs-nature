@@ -1,5 +1,6 @@
 site_name: MkDocs-Nature
 site_author: "Waylan Limberg"
+site_url: https://waylan.github.io/mkdocs-nature/
 
 repo_name: GitHub
 repo_url: https://github.com/waylan/mkdocs-nature
