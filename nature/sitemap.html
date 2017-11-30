@@ -17,8 +17,12 @@
     </li>
 {%- endmacro %}
 
+{%- block htmltitle %}
+    <title>Sitemap &#8212; {{ config.site_name }} {{ config.theme.release }} documentation</title>
+{%- endblock %}
+
 {%- block content %}
-    <h1 id="index">Index</h1>
+    <h1 id="index">Sitemap</h1>
     {%- if nav|length>1 %}
     <ul>
     {%- for item in nav %}

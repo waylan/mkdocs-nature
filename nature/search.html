@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{%- block htmltitle %}
+    <title>Search &#8212; {{ config.site_name }} {{ config.theme.release }} documentation</title>
+{%- endblock %}
+
 {%- block content %}
     <h1 id="search-documentation">Search</h1>
     <div id="fallback" class="admonition warning">

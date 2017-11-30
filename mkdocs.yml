@@ -19,7 +19,7 @@ markdown_extensions:
     - codehilite
 
 pages:
-    - Home: index.md
+    - MkDocs-Nature: index.md
     - Features: features.md
     - About:
         - "The Project": about.md
