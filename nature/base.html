@@ -33,7 +33,7 @@
             {%- endif %}
             {%- endblock %}
             <li class="right" style="margin-right: 10px">
-                <a href="sitemap.html" title="Sitemap" accesskey="I">index</a>
+                <a href="{{ base_url }}/sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             {% if page and page.next_page %}<li class="right">
                 <a href="{{ page.next_page.url }}" title="{{ page.next_page.title }}" accesskey="N">next</a> |
@@ -41,7 +41,7 @@
             {% if page and page.previous_page %}<li class="right">
                 <a href="{{ page.previous_page.url }}" title="{{ page.previous_page.title }}" accesskey="P">previous</a> |
             </li>{% endif %}
-            {% if config.extra.icon %}<li><img src="{{ base_url }}/{{ config.extra.icon }}"
+            {% if config.theme.icon %}<li><img src="{{ base_url }}/{{ config.theme.icon }}"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>{% endif %}
             <li class="nav-item nav-item-0">
                 <a href="{{ nav.homepage.url }}">{{ config.site_name }}</a> &#187;
@@ -72,9 +72,9 @@
     <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
             {%- block sidebarlogo %}
-            {%- if config.extra.logo %}
+            {%- if config.theme.logo %}
             <p class="logo"><a href="{{ nav.homepage.url }}">
-              <img class="logo" src="{{ base_url }}/{{ config.extra.logo }}" alt="Logo"/>
+              <img class="logo" src="{{ base_url }}/{{ config.theme.logo }}" alt="Logo"/>
             </a></p>
             {%- endif %}
             {%- endblock %}
@@ -107,8 +107,8 @@
             <div role="note" aria-label="source link">
                 <h3>This Page</h3>
                 <ul class="this-page-menu">
-                    {%- if config.extra.issue_tracker %}
-                    <li><a href="{{ config.extra.issue_tracker }}">Report a Bug</a></li>
+                    {%- if config.theme.issue_tracker %}
+                    <li><a href="{{ config.theme.issue_tracker }}">Report a Bug</a></li>
                     {%- endif %}
                     {%- if page and page.edit_url %}
                     <li><a href="{{ page.edit_url }}">Edit on {{ config.repo_name }}</a></li>

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
-{%- macro nav_item(item) %}
-    <li class="nav-item">
+{%- macro page_item(item) %}
+    <li>
     {%- if item.url %}
         <a href="{{ item.url }}">{{ item.title }}</a>
     {%- else %}
@@ -10,7 +10,7 @@
     {%- if item.children %}
         <ul>
         {%- for child in item.children %}
-            {{ nav_item(child) }}
+            {{ page_item(child) }}
         {%- endfor %}
         </ul>
     {%- endif %}
@@ -19,9 +19,13 @@
 
 {%- block content %}
     <h1 id="index">Index</h1>
+    {%- if nav|length>1 %}
     <ul>
     {%- for item in nav %}
-        {{ nav_item(item) }}
+        {{ page_item(item) }}
     {%- endfor %}
     </ul>
+    {%- else %}
+        <p>No pages to list here.</p>
+    {%- endif %}
 {%- endblock %}

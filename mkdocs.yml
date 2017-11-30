@@ -1,15 +1,13 @@
 site_name: MkDocs-Nature
 site_author: "Waylan Limberg"
-favicon: favicon.ico
 
 repo_name: GitHub
 repo_url: https://github.com/waylan/mkdocs-nature
 
 copyright: "Copyright &copy; 2017"
 
-theme: nature
-
-extra:
+theme:
+    name: nature
     issue_tracker: https://github.com/waylan/mkdocs-nature/issues
     icon: icon.png
     # logo: logo.png

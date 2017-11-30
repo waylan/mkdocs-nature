@@ -1,0 +1,3 @@
+static_templates:
+    - sitemap.html
+    - search.html
