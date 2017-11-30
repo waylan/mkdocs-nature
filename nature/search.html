@@ -15,15 +15,13 @@
     </div>
     <p>
         From here you can search these documents. Enter your search
-        words into the box below and click "search". 
+        words into the box below. 
     </p>
     <form action="" method="get">
-        <input type="text" name="q" value="" />
-        <input type="submit" value="search" />
-        <span id="search-progress" style="padding-left: 10px"></span>
+        <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="Search the Docs" autocomplete="off" autofocus>
     </form>
   
-    <div id="search-results">
+    <div id="mkdocs-search-results" class="search-results">
         <!-- sample search results:
         <h2>Search Results</h2>
         <p>Search finished, found 2 page(s) matching the search query.</p>
@@ -34,3 +32,5 @@
         -->
     </div>
 {%- endblock %}
+
+{%- block search_button %}{% endblock %}
