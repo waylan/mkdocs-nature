@@ -10,13 +10,13 @@ theme:
     name: nature
     issue_tracker: https://github.com/waylan/mkdocs-nature/issues
     icon: icon.png
-    # logo: logo.png
     release: '0.0.1'
 
 markdown_extensions:
     - toc:
-        permalink: True
+        permalink: §
     - codehilite
+    - admonition
 
 pages:
     - MkDocs-Nature: index.md
