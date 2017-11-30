@@ -1,5 +1,5 @@
 # Release Notes
 
-## Version 0.0.1 (2017/??/??)
+## Version 0.1.0 (2017/11/30)
 
 The inital release.

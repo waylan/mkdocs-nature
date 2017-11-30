@@ -10,7 +10,7 @@ theme:
     name: nature
     issue_tracker: https://github.com/waylan/mkdocs-nature/issues
     icon: icon.png
-    release: '0.0.1'
+    release: '0.1.0'
 
 markdown_extensions:
     - toc:
