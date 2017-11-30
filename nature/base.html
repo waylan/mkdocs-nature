@@ -44,7 +44,7 @@
             {% if config.theme.icon %}<li><img src="{{ base_url }}/{{ config.theme.icon }}"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>{% endif %}
             <li class="nav-item nav-item-0">
-                <a href="{{ nav.homepage.url }}">{{ config.site_name }}</a> &#187;
+                <a href="{{ nav.homepage.url }}">{{ config.site_name }}{% if config.theme.release %} {{ config.theme.release }} documentation{% endif %}</a> &#187;
             </li>
             {%- if page and not page.is_homepage %}
                 {%- for item in nav %}
