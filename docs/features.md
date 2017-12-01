@@ -17,7 +17,7 @@ control the theme's behavior.
 Point this setting at an image file in your `docs_dir` to display an icon in
 your documentation.
 
-```yml
+```yaml
 theme:
     name: nature
     icon: icon.png
@@ -28,7 +28,7 @@ theme:
 Point this setting at an image file in your `docs_dir` to display logo in
 your documentation.
 
-```yml
+```yaml
 theme:
     name: nature
     logo: logo.png
@@ -39,7 +39,7 @@ theme:
 Use this setting to include the version of the project you are documenting in
 your documentation.
 
-```yml
+```yaml
 theme:
     name: nature
     release: '2.1.3'
@@ -50,7 +50,7 @@ theme:
 Assign the URL for your issue tracker to this setting to include a "Report a
 Bug" link on each page. For example, if you use GitHub to track issues:
 
-```yml
+```yaml
 theme:
     name: nature
     issue_tracker: https://github.com/user/project/issues
@@ -77,7 +77,7 @@ for more details.
 Assign the text to be used as a copyright notice in the footer of each page. For
 example:
 
-```yml
+```yaml
 copyright: "Copyright &copy; 2017"
 ```
 
@@ -94,7 +94,7 @@ and included in your site. If you would like to disable search, then disable the
 search plugin by defining a `plugins` setting which does not include `search`.
 If you have no other plugins, then set `plugins` to an empty list:
 
-```yml
+```yaml
 plugins: []
 ```
 
@@ -104,7 +104,7 @@ To enable permalinks to appear when hovering over any page or section headers,
 you need to enable the relevant configuration setting for the TOC extension of
 Python-Markdown.
 
-```yml
+```yaml
 markdown_extensions:
     - toc:
         permalink: true
@@ -120,7 +120,7 @@ The appropriate CSS styles are defined to support the `admonition` extension to
 Python-Markdown. To utilize admonitions, enable the extension in your config
 file:
 
-```yml
+```yaml
 markdown_extensions:
     - admonition
 ```

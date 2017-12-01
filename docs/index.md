@@ -14,7 +14,7 @@ pip install mkdocs-nature
 
 Configure your MkDocs project to use the theme by setting the `theme.name` to `nature`:
 
-```yml
+```yaml
 theme:
     name: nature
 ```
