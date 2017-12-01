@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "MkDocs-Nature\n\u00a7\n\n\nA \nMkDocs\n Theme. A clone of the \"greenish\" \nSphinx theme\n of the same name.\n\n\nDocumentation\n\u00a7\n\n\n\n\nFeatures\n\n\nAbout\n\n\nContributing\n\n\nRelease Notes", 
+            "text": "MkDocs-Nature\n\u00a7\n\n\nA \nMkDocs\n Theme. A clone of the \"greenish\" \nSphinx theme\n of the same name.\n\n\nInstallation\n\u00a7\n\n\nTo install the MkSocs-Nature them, run the following command:\n\n\npip install mkdocs-nature\n\n\n\n\nSetup\n\u00a7\n\n\nConfigure your MkDocs project to use the theme by setting the \ntheme.name\n to \nnature\n:\n\n\ntheme:\n    name: nature\n\n\n\n\nFor a list of supported variables which can be set in the config, see the\ndocumented \nfeatures\n.\n\n\nDocumentation\n\u00a7\n\n\n\n\nFeatures\n\n\nAbout\n\n\nContributing\n\n\nRelease Notes", 
             "title": "MkDocs-Nature"
         }, 
         {
@@ -11,13 +11,23 @@
             "title": "MkDocs-Nature"
         }, 
         {
+            "location": "/#installation", 
+            "text": "To install the MkSocs-Nature them, run the following command:  pip install mkdocs-nature", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/#setup", 
+            "text": "Configure your MkDocs project to use the theme by setting the  theme.name  to  nature :  theme:\n    name: nature  For a list of supported variables which can be set in the config, see the\ndocumented  features .", 
+            "title": "Setup"
+        }, 
+        {
             "location": "/#documentation", 
             "text": "Features  About  Contributing  Release Notes", 
             "title": "Documentation"
         }, 
         {
             "location": "/features/", 
-            "text": "Features\n\u00a7\n\n\nThe MkDocs-Nature theme supports a number of features which are configurable by\nthe end user.\n\n\n\n\nTheme Variables\n\n\nSearch\n\n\nCode Highlighting\n\n\n\n\nTheme Variables\n\u00a7\n\n\nThe theme includes support for a few variables which can be set by the user to\ncontrol the theme's behavior.\n\n\ntheme.icon\n\u00a7\n\n\nPoint this setting at an image file in your \ndocs_dir\n to display an icon in\nyour documentation.\n\n\ntheme\n:\n\n    \nname\n:\n \nnature\n\n    \nicon\n:\n \nicon\n.\npng\n\n\n\n\n\n\ntheme.logo\n\u00a7\n\n\nPoint this setting at an image file in your \ndocs_dir\n to display logo in\nyour documentation.\n\n\ntheme\n:\n\n    \nname\n:\n \nnature\n\n    \nlogo\n:\n \nlogo\n.\npng\n\n\n\n\n\n\ntheme.release\n\u00a7\n\n\nUse this setting to include the version of the project you are documenting in\nyour documentation.\n\n\ntheme\n:\n\n    \nname\n:\n \nnature\n\n    \nrelease\n:\n \n2.1.3\n\n\n\n\n\n\ntheme.issue_tracker\n\u00a7\n\n\nAssign the URL for your issue tracker to this setting to include a \"Report a\nBug\" link on each page. For example, if you use GitHub to track issues:\n\n\ntheme\n:\n\n    \nname\n:\n \nnature\n\n    \nissue_tracker\n:\n \nhttps\n://\ngithub\n.\ncom\n/user/project/iss\nues\n\n\n\n\n\n\nrepo_url\n\u00a7\n\n\nAssign the URL for your repository to this setting to include a link on each\npage. See MkDocs' \ndocumentation\n for more details.\n\n\nedit_uri\n\u00a7\n\n\nWhen set, an \"edit this page\" link is included on each page. Note that if the\n\nrepo_url\n points to either GitHub or Bitbucket, this setting is automatically\nconfigured and does not need to be set manually. See MkDocs' \ndocumentation\n\nfor more details.\n\n\ncopyright\n\u00a7\n\n\nAssign the text to be used as a copyright notice in the footer of each page. For\nexample:\n\n\ncopyright\n:\n \nCopyright \ncopy; 2017\n\n\n\n\n\n\nsite_author\n\u00a7\n\n\nAssign the name to be included with the copyright notice on each page. This\nsetting is ignored if \ncopyright\n is not also set.\n\n\nSearch\n\u00a7\n\n\nThe MkDocs-Nature theme includes support for MkDocs search plugin. As long as\nthe search plugin is enabled (MkDocs' default), a search page will be generated\nand included in your site. If you would like to disable search, then disable the\nsearch plugin by defining a \nplugins\n setting which does not include \nsearch\n.\nIf you have no other plugins, then set \nplugins\n to an empty list:\n\n\nplugins: []\n\n\n\n\n\nPermalinks\n\u00a7\n\n\nTo enable permalinks to appear when hovering over any page or section headers,\nyou need to enable the relevant configuration setting for the TOC extension of\nPython-Markdown.\n\n\nmarkdown_extensions:\n    - toc:\n        permalink: true\n\n\n\n\n\nBy default, the pilcrow or paragraph sign (\n) is used for the permalink. If\nyou would like different text, set \npermalink\n to your desired string instead of\n\ntrue\n. For example setting it to \n\u00a7\n would display the section sign.\n\n\nAdmonitions\n\u00a7\n\n\nThe appropriate CSS styles are defined to support the \nadmonition\n extension to\nPython-Markdown. To utilize admonitions, enable the extension in your config\nfile:\n\n\nmarkdown_extensions:\n    - admonition\n\n\n\n\n\n\n\nAttention\n\n\nSee the Admonition Extension \ndocumentation\n for specifics on the syntax.\n\n\n\n\nCode Highlighting\n\u00a7\n\n\nBy enabling the \ncodehilite\n extension in your \nmkdocs.yml\n config file you get\nsyntax highlighting support using Pygments' Tango theme.\n\n\nConfiguration\n\u00a7\n\n\nEnable the \ncodehilite\n extension in your \nmkdocs.yml\n config file:\n\n\nmarkdown_extensions\n:\n\n    \n-\n \ncodehilite\n\n\n\n\n\n\nUsage\n\u00a7\n\n\nFor best results, be sure to identify the language of each code block in your\nMarkdown files.\n\n\nJavaScript Sample\n\u00a7\n\n\nFor example, by using the following Markdown:\n\n\n```javascript\nalert(\nA JavaScript Alert!\n);\n```\n\n\n\n\n\nYour codeblock will render as:\n\n\nalert\n(\nA JavaScript Alert!\n);\n\n\n\n\n\n\nHTML Sample\n\u00a7\n\n\n!DOCTYPE html\n\n\nhtml\n \nlang\n=\nen\n\n    \nhead\n\n        \nmeta\n \nhttp-equiv\n=\nContent-Type\n \ncontent\n=\ntext/html; charset=utf-8\n \n/\n\n        \ntitle\nHello, World!\n/\ntitle\n\n    \n/\nhead\n\n    \nbody\n\n        \nh1\nHello, World!\n/\nh1\n\n    \n/\nbody\n\n\n/\nhtml\n\n\n\n\n\n\nPython Sample\n\u00a7\n\n\n \ndef\n \nhello\n(\nname\n):\n\n\n...\n     \nprint\n \nu\nHello, {}!\n.\nformat\n(\nname\n)\n\n\n...\n\n\n \nhello\n(\nWorld\n)\n\n\nu\nHello, World!", 
+            "text": "Features\n\u00a7\n\n\nThe MkDocs-Nature theme supports a number of features which are configurable by\nthe end user.\n\n\n\n\nTheme Variables\n\n\nSearch\n\n\nCode Highlighting\n\n\n\n\nTheme Variables\n\u00a7\n\n\nThe theme includes support for a few variables which can be set by the user to\ncontrol the theme's behavior.\n\n\ntheme.icon\n\u00a7\n\n\nPoint this setting at an image file in your \ndocs_dir\n to display an icon in\nyour documentation.\n\n\ntheme:\n    name: nature\n    icon: icon.png\n\n\n\n\ntheme.logo\n\u00a7\n\n\nPoint this setting at an image file in your \ndocs_dir\n to display logo in\nyour documentation.\n\n\ntheme:\n    name: nature\n    logo: logo.png\n\n\n\n\ntheme.release\n\u00a7\n\n\nUse this setting to include the version of the project you are documenting in\nyour documentation.\n\n\ntheme:\n    name: nature\n    release: '2.1.3'\n\n\n\n\ntheme.issue_tracker\n\u00a7\n\n\nAssign the URL for your issue tracker to this setting to include a \"Report a\nBug\" link on each page. For example, if you use GitHub to track issues:\n\n\ntheme:\n    name: nature\n    issue_tracker: https://github.com/user/project/issues\n\n\n\n\nrepo_url\n\u00a7\n\n\nAssign the URL for your repository to this setting to include a link on each\npage. See MkDocs' \ndocumentation\n for more details.\n\n\nedit_uri\n\u00a7\n\n\nWhen set, an \"edit this page\" link is included on each page. Note that if the\n\nrepo_url\n points to either GitHub or Bitbucket, this setting is automatically\nconfigured and does not need to be set manually. See MkDocs' \ndocumentation\n\nfor more details.\n\n\ncopyright\n\u00a7\n\n\nAssign the text to be used as a copyright notice in the footer of each page. For\nexample:\n\n\ncopyright: \nCopyright \ncopy; 2017\n\n\n\n\nsite_author\n\u00a7\n\n\nAssign the name to be included with the copyright notice on each page. This\nsetting is ignored if \ncopyright\n is not also set.\n\n\nSearch\n\u00a7\n\n\nThe MkDocs-Nature theme includes support for MkDocs search plugin. As long as\nthe search plugin is enabled (MkDocs' default), a search page will be generated\nand included in your site. If you would like to disable search, then disable the\nsearch plugin by defining a \nplugins\n setting which does not include \nsearch\n.\nIf you have no other plugins, then set \nplugins\n to an empty list:\n\n\nplugins: []\n\n\n\n\nPermalinks\n\u00a7\n\n\nTo enable permalinks to appear when hovering over any page or section headers,\nyou need to enable the relevant configuration setting for the TOC extension of\nPython-Markdown.\n\n\nmarkdown_extensions:\n    - toc:\n        permalink: true\n\n\n\n\nBy default, the pilcrow or paragraph sign (\n) is used for the permalink. If\nyou would like different text, set \npermalink\n to your desired string instead of\n\ntrue\n. For example setting it to \n\u00a7\n would display the section sign.\n\n\nAdmonitions\n\u00a7\n\n\nThe appropriate CSS styles are defined to support the \nadmonition\n extension to\nPython-Markdown. To utilize admonitions, enable the extension in your config\nfile:\n\n\nmarkdown_extensions:\n    - admonition\n\n\n\n\n\n\nAttention\n\n\nSee the Admonition Extension \ndocumentation\n for specifics on the syntax.\n\n\n\n\nCode Highlighting\n\u00a7\n\n\nBy enabling the \ncodehilite\n extension in your \nmkdocs.yml\n config file you get\nsyntax highlighting support using Pygments' Tango theme.\n\n\nConfiguration\n\u00a7\n\n\nEnable the \ncodehilite\n extension in your \nmkdocs.yml\n config file:\n\n\nmarkdown_extensions:\n    - codehilite\n\n\n\n\nUsage\n\u00a7\n\n\nFor best results, be sure to identify the language of each code block in your\nMarkdown files.\n\n\nJavaScript Sample\n\u00a7\n\n\nFor example, by using the following Markdown:\n\n\n```javascript\nalert(\nA JavaScript Alert!\n);\n```\n\n\n\n\nYour codeblock will render as:\n\n\nalert(\nA JavaScript Alert!\n);\n\n\n\n\nHTML Sample\n\u00a7\n\n\n!DOCTYPE html\n\n\nhtml lang=\nen\n\n    \nhead\n\n        \nmeta http-equiv=\nContent-Type\n content=\ntext/html; charset=utf-8\n /\n\n        \ntitle\nHello, World!\n/title\n\n    \n/head\n\n    \nbody\n\n        \nh1\nHello, World!\n/h1\n\n    \n/body\n\n\n/html\n\n\n\n\nPython Sample\n\u00a7\n\n\n def hello(name):\n...     print u\nHello, {}!\n.format(name)\n...\n\n hello('World')\nu'Hello, World!'", 
             "title": "Features"
         }, 
         {
@@ -32,22 +42,22 @@
         }, 
         {
             "location": "/features/#themeicon", 
-            "text": "Point this setting at an image file in your  docs_dir  to display an icon in\nyour documentation.  theme : \n     name :   nature \n     icon :   icon . png", 
+            "text": "Point this setting at an image file in your  docs_dir  to display an icon in\nyour documentation.  theme:\n    name: nature\n    icon: icon.png", 
             "title": "theme.icon"
         }, 
         {
             "location": "/features/#themelogo", 
-            "text": "Point this setting at an image file in your  docs_dir  to display logo in\nyour documentation.  theme : \n     name :   nature \n     logo :   logo . png", 
+            "text": "Point this setting at an image file in your  docs_dir  to display logo in\nyour documentation.  theme:\n    name: nature\n    logo: logo.png", 
             "title": "theme.logo"
         }, 
         {
             "location": "/features/#themerelease", 
-            "text": "Use this setting to include the version of the project you are documenting in\nyour documentation.  theme : \n     name :   nature \n     release :   2.1.3", 
+            "text": "Use this setting to include the version of the project you are documenting in\nyour documentation.  theme:\n    name: nature\n    release: '2.1.3'", 
             "title": "theme.release"
         }, 
         {
             "location": "/features/#themeissue_tracker", 
-            "text": "Assign the URL for your issue tracker to this setting to include a \"Report a\nBug\" link on each page. For example, if you use GitHub to track issues:  theme : \n     name :   nature \n     issue_tracker :   https :// github . com /user/project/iss ues", 
+            "text": "Assign the URL for your issue tracker to this setting to include a \"Report a\nBug\" link on each page. For example, if you use GitHub to track issues:  theme:\n    name: nature\n    issue_tracker: https://github.com/user/project/issues", 
             "title": "theme.issue_tracker"
         }, 
         {
@@ -62,7 +72,7 @@
         }, 
         {
             "location": "/features/#copyright", 
-            "text": "Assign the text to be used as a copyright notice in the footer of each page. For\nexample:  copyright :   Copyright  copy; 2017", 
+            "text": "Assign the text to be used as a copyright notice in the footer of each page. For\nexample:  copyright:  Copyright  copy; 2017", 
             "title": "copyright"
         }, 
         {
@@ -92,7 +102,7 @@
         }, 
         {
             "location": "/features/#configuration", 
-            "text": "Enable the  codehilite  extension in your  mkdocs.yml  config file:  markdown_extensions : \n     -   codehilite", 
+            "text": "Enable the  codehilite  extension in your  mkdocs.yml  config file:  markdown_extensions:\n    - codehilite", 
             "title": "Configuration"
         }, 
         {
@@ -102,17 +112,17 @@
         }, 
         {
             "location": "/features/#javascript-sample", 
-            "text": "For example, by using the following Markdown:  ```javascript\nalert( A JavaScript Alert! );\n```  Your codeblock will render as:  alert ( A JavaScript Alert! );", 
+            "text": "For example, by using the following Markdown:  ```javascript\nalert( A JavaScript Alert! );\n```  Your codeblock will render as:  alert( A JavaScript Alert! );", 
             "title": "JavaScript Sample"
         }, 
         {
             "location": "/features/#html-sample", 
-            "text": "!DOCTYPE html  html   lang = en \n     head \n         meta   http-equiv = Content-Type   content = text/html; charset=utf-8   / \n         title Hello, World! / title \n     / head \n     body \n         h1 Hello, World! / h1 \n     / body  / html", 
+            "text": "!DOCTYPE html  html lang= en \n     head \n         meta http-equiv= Content-Type  content= text/html; charset=utf-8  / \n         title Hello, World! /title \n     /head \n     body \n         h1 Hello, World! /h1 \n     /body  /html", 
             "title": "HTML Sample"
         }, 
         {
             "location": "/features/#python-sample", 
-            "text": "def   hello ( name ):  ...       print   u Hello, {}! . format ( name )  ...    hello ( World )  u Hello, World!", 
+            "text": "def hello(name):\n...     print u Hello, {}! .format(name)\n...  hello('World')\nu'Hello, World!'", 
             "title": "Python Sample"
         }, 
         {
@@ -162,7 +172,7 @@
         }, 
         {
             "location": "/release-notes/", 
-            "text": "Release Notes\n\u00a7\n\n\nVersion 0.1.0 (2017/11/30)\n\u00a7\n\n\nThe inital release.", 
+            "text": "Release Notes\n\u00a7\n\n\nVersion 0.2 (2017/11/30)\n\u00a7\n\n\n\n\nDocument installation and setup.\n\n\nAdd wheel support.\n\n\nAdd 404 error page.\n\n\nAdd \nsite_url\n to config.\n\n\n\n\nVersion 0.1 (2017/11/30)\n\u00a7\n\n\nThe inital release.", 
             "title": "Release Notes"
         }, 
         {
@@ -171,9 +181,14 @@
             "title": "Release Notes"
         }, 
         {
-            "location": "/release-notes/#version-010-20171130", 
+            "location": "/release-notes/#version-02-20171130", 
+            "text": "Document installation and setup.  Add wheel support.  Add 404 error page.  Add  site_url  to config.", 
+            "title": "Version 0.2 (2017/11/30)"
+        }, 
+        {
+            "location": "/release-notes/#version-01-20171130", 
             "text": "The inital release.", 
-            "title": "Version 0.1.0 (2017/11/30)"
+            "title": "Version 0.1 (2017/11/30)"
         }
     ]
 }
