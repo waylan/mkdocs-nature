@@ -2,6 +2,8 @@ from setuptools import setup, find_packages
 
 VERSION = '0.1.0'
 
+with open('README.rst', mode='r') as fd:
+    long_description = fd.read()
 
 setup(
     name="mkdocs-nature",
@@ -9,6 +11,7 @@ setup(
     url='https://waylan.github.io/mkdocs-nature/',
     license='BSD',
     description='A MkDocs theme. A clone of the "greenish" Sphinx theme of the same name.',
+    long_description=long_description,
     author='Waylan Limberg',
     author_email='waylan.limberg@icloud.com',
     packages=find_packages(),

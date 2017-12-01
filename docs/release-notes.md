@@ -2,6 +2,7 @@
 
 ## Development Version
 
+* Add wheel support.
 * Add 404 error page.
 * Add `site_url` to config.
 
