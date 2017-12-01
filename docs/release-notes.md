@@ -1,6 +1,6 @@
 # Release Notes
 
-## Development Version
+## Version 0.2 (2017/11/30)
 
 * Document installation and setup.
 * Add wheel support.
