@@ -4,7 +4,7 @@ A [MkDocs] Theme. A clone of the "greenish" [Sphinx theme] of the same name.
 
 ## Installation
 
-To install the MkSocs-Nature them, run the following command:
+To install the MkDocs-Nature them, run the following command:
 
 ```sh
 pip install mkdocs-nature

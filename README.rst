@@ -11,7 +11,7 @@ For a demonstration of its `features`_ see the `documentation`_.
 Installation
 ============
 
-To install the MkSocs-Nature them, run the following command::
+To install the MkDocs-Nature them, run the following command::
 
     pip install mkdocs-nature
 
