@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "MkDocs-Nature\n\u00a7\n\n\nA \nMkDocs\n Theme. A clone of the \"greenish\" \nSphinx theme\n of the same name.\n\n\nInstallation\n\u00a7\n\n\nTo install the MkSocs-Nature them, run the following command:\n\n\npip install mkdocs-nature\n\n\n\n\nSetup\n\u00a7\n\n\nConfigure your MkDocs project to use the theme by setting the \ntheme.name\n to \nnature\n:\n\n\ntheme:\n    name: nature\n\n\n\n\nFor a list of supported variables which can be set in the config, see the\ndocumented \nfeatures\n.\n\n\nDocumentation\n\u00a7\n\n\n\n\nFeatures\n\n\nAbout\n\n\nContributing\n\n\nRelease Notes", 
+            "text": "MkDocs-Nature\n\u00a7\n\n\nA \nMkDocs\n Theme. A clone of the \"greenish\" \nSphinx theme\n of the same name.\n\n\nInstallation\n\u00a7\n\n\nTo install the MkDocs-Nature them, run the following command:\n\n\npip install mkdocs-nature\n\n\n\n\nSetup\n\u00a7\n\n\nConfigure your MkDocs project to use the theme by setting the \ntheme.name\n to \nnature\n:\n\n\ntheme:\n    name: nature\n\n\n\n\nFor a list of supported variables which can be set in the config, see the\ndocumented \nfeatures\n.\n\n\nDocumentation\n\u00a7\n\n\n\n\nFeatures\n\n\nAbout\n\n\nContributing\n\n\nRelease Notes", 
             "title": "MkDocs-Nature"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#installation", 
-            "text": "To install the MkSocs-Nature them, run the following command:  pip install mkdocs-nature", 
+            "text": "To install the MkDocs-Nature them, run the following command:  pip install mkdocs-nature", 
             "title": "Installation"
         }, 
         {
