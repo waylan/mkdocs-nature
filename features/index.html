@@ -66,36 +66,36 @@ control the theme's behavior.</p>
 <h3 id="themeicon">theme.icon<a class="headerlink" href="#themeicon" title="Permanent link">§</a></h3>
 <p>Point this setting at an image file in your <code>docs_dir</code> to display an icon in
 your documentation.</p>
-<div class="codehilite"><pre><span></span><span class="n">theme</span><span class="o">:</span>
-    <span class="n">name</span><span class="o">:</span> <span class="n">nature</span>
-    <span class="n">icon</span><span class="o">:</span> <span class="n">icon</span><span class="o">.</span><span class="na">png</span>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">nature</span>
+    <span class="l l-Scalar l-Scalar-Plain">icon</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">icon.png</span>
 </pre></div>
 
 
 <h3 id="themelogo">theme.logo<a class="headerlink" href="#themelogo" title="Permanent link">§</a></h3>
 <p>Point this setting at an image file in your <code>docs_dir</code> to display logo in
 your documentation.</p>
-<div class="codehilite"><pre><span></span><span class="n">theme</span><span class="o">:</span>
-    <span class="n">name</span><span class="o">:</span> <span class="n">nature</span>
-    <span class="n">logo</span><span class="o">:</span> <span class="n">logo</span><span class="o">.</span><span class="na">png</span>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">nature</span>
+    <span class="l l-Scalar l-Scalar-Plain">logo</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">logo.png</span>
 </pre></div>
 
 
 <h3 id="themerelease">theme.release<a class="headerlink" href="#themerelease" title="Permanent link">§</a></h3>
 <p>Use this setting to include the version of the project you are documenting in
 your documentation.</p>
-<div class="codehilite"><pre><span></span><span class="n">theme</span><span class="o">:</span>
-    <span class="n">name</span><span class="o">:</span> <span class="n">nature</span>
-    <span class="n">release</span><span class="o">:</span> <span class="s1">&#39;2.1.3&#39;</span>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">nature</span>
+    <span class="l l-Scalar l-Scalar-Plain">release</span><span class="p p-Indicator">:</span> <span class="s">&#39;2.1.3&#39;</span>
 </pre></div>
 
 
 <h3 id="themeissue_tracker">theme.issue_tracker<a class="headerlink" href="#themeissue_tracker" title="Permanent link">§</a></h3>
 <p>Assign the URL for your issue tracker to this setting to include a "Report a
 Bug" link on each page. For example, if you use GitHub to track issues:</p>
-<div class="codehilite"><pre><span></span><span class="n">theme</span><span class="o">:</span>
-    <span class="n">name</span><span class="o">:</span> <span class="n">nature</span>
-    <span class="n">issue_tracker</span><span class="o">:</span> <span class="n">https</span><span class="o">://</span><span class="n">github</span><span class="o">.</span><span class="na">com</span><span class="sr">/user/project/iss</span><span class="n">ues</span>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">nature</span>
+    <span class="l l-Scalar l-Scalar-Plain">issue_tracker</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/user/project/issues</span>
 </pre></div>
 
 
@@ -110,7 +110,7 @@ for more details.</p>
 <h3 id="copyright">copyright<a class="headerlink" href="#copyright" title="Permanent link">§</a></h3>
 <p>Assign the text to be used as a copyright notice in the footer of each page. For
 example:</p>
-<div class="codehilite"><pre><span></span><span class="nt">copyright</span><span class="o">:</span> <span class="s2">&quot;Copyright &amp;copy; 2017&quot;</span>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">copyright</span><span class="p p-Indicator">:</span> <span class="s">&quot;Copyright</span><span class="nv"> </span><span class="s">&amp;copy;</span><span class="nv"> </span><span class="s">2017&quot;</span>
 </pre></div>
 
 
@@ -123,7 +123,7 @@ the search plugin is enabled (MkDocs' default), a search page will be generated
 and included in your site. If you would like to disable search, then disable the
 search plugin by defining a <code>plugins</code> setting which does not include <code>search</code>.
 If you have no other plugins, then set <code>plugins</code> to an empty list:</p>
-<div class="codehilite"><pre><span></span>plugins: []
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">plugins</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span>
 </pre></div>
 
 
@@ -131,9 +131,9 @@ If you have no other plugins, then set <code>plugins</code> to an empty list:</p
 <p>To enable permalinks to appear when hovering over any page or section headers,
 you need to enable the relevant configuration setting for the TOC extension of
 Python-Markdown.</p>
-<div class="codehilite"><pre><span></span>markdown_extensions:
-    - toc:
-        permalink: true
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">toc</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">permalink</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 </pre></div>
 
 
@@ -144,8 +144,8 @@ you would like different text, set <code>permalink</code> to your desired string
 <p>The appropriate CSS styles are defined to support the <code>admonition</code> extension to
 Python-Markdown. To utilize admonitions, enable the extension in your config
 file:</p>
-<div class="codehilite"><pre><span></span>markdown_extensions:
-    - admonition
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admonition</span>
 </pre></div>
 
 
@@ -363,7 +363,7 @@ alert(&quot;A JavaScript Alert!&quot;);
 
         <!--
         MkDocs version      : 0.17.2
-        Docs Build Date UTC : 2017-12-01 01:19:35
+        Docs Build Date UTC : 2017-12-01 01:26:28
         -->
     </body>
 </html>
