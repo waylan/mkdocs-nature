@@ -172,7 +172,7 @@
         }, 
         {
             "location": "/release-notes/", 
-            "text": "Release Notes\n\u00a7\n\n\nVersion 0.2 (2017/11/30)\n\u00a7\n\n\n\n\nDocument installation and setup.\n\n\nAdd wheel support.\n\n\nAdd 404 error page.\n\n\nAdd \nsite_url\n to config.\n\n\n\n\nVersion 0.1 (2017/11/30)\n\u00a7\n\n\nThe inital release.", 
+            "text": "Release Notes\n\u00a7\n\n\nVersion 0.2.1 (2017/12/01)\n\u00a7\n\n\n\n\nInclude \n*.yml\n files in MANIFEST.in.\n\n\n\n\nVersion 0.2 (2017/11/30)\n\u00a7\n\n\n\n\nDocument installation and setup.\n\n\nAdd wheel support.\n\n\nAdd 404 error page.\n\n\nAdd \nsite_url\n to config.\n\n\n\n\nVersion 0.1 (2017/11/30)\n\u00a7\n\n\nThe initial release.", 
             "title": "Release Notes"
         }, 
         {
@@ -181,13 +181,18 @@
             "title": "Release Notes"
         }, 
         {
+            "location": "/release-notes/#version-021-20171201", 
+            "text": "Include  *.yml  files in MANIFEST.in.", 
+            "title": "Version 0.2.1 (2017/12/01)"
+        }, 
+        {
             "location": "/release-notes/#version-02-20171130", 
             "text": "Document installation and setup.  Add wheel support.  Add 404 error page.  Add  site_url  to config.", 
             "title": "Version 0.2 (2017/11/30)"
         }, 
         {
             "location": "/release-notes/#version-01-20171130", 
-            "text": "The inital release.", 
+            "text": "The initial release.", 
             "title": "Version 0.1 (2017/11/30)"
         }
     ]
