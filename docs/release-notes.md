@@ -1,5 +1,9 @@
 # Release Notes
 
+## Development Version
+
+* Ensure tables styles get applied to Markdown tables.
+
 ## Version 0.2.1 (2017/12/01)
 
 * Include `*.yml` files in MANIFEST.in.
