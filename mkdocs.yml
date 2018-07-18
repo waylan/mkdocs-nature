@@ -19,7 +19,7 @@ markdown_extensions:
     - codehilite
     - admonition
 
-pages:
+nav:
     - MkDocs-Nature: index.md
     - Features: features.md
     - About:

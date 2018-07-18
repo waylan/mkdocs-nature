@@ -4,14 +4,16 @@
     {%- if item.active %}
         <li class="nav-item">
         {%- if item.url %}
-            <a href="{{ item.url }}">{{ item.title }}</a>
+            <a href="{{ item.url|url }}">{{ item.title }}</a>
         {%- else %}
             {{ item.title }}
         {%- endif %}
          &#187; </li>
-        {%- for child in item.children %}
-            {{ nav_item(child)}}
-        {%- endfor %}
+        {%- if item.chidlren %}
+            {%- for child in item.children %}
+                {{ nav_item(child) }}
+            {%- endfor %}
+        {%- endif %}
     {%- endif %}
 {%- endmacro %}
 
@@ -24,27 +26,27 @@
                 <li class="right" style="margin-right: 10px">
                     <a href="{{ config.repo_url }}" title="View this project on {{ config.repo_name }}">
                     {%- if config.repo_name == 'GitHub' -%}
-                        <img src={{ base_url }}/static/github.png width=16px style="vertical-align: middle; margin-top: -1px" />
+                        <img src="{{ 'static/github.png'|url }}" width=16px style="vertical-align: middle; margin-top: -1px" />
                     {%- elif config.repo_name == 'Bitbucket' -%}
-                        <img src={{ base_url }}/static/bitbucket.png width=16px style="vertical-align: middle; margin-top: -1px" />
+                        <img src="{{ 'static/bitbucket.png'|url }}" width=16px style="vertical-align: middle; margin-top: -1px" />
                     {%- endif -%}
                     </a>
                 </li>
             {%- endif %}
             {%- endblock %}
             <li class="right" style="margin-right: 10px">
-                <a href="{{ base_url }}/sitemap.html" title="Sitemap" accesskey="I">index</a>
+                <a href="{{ 'sitemap.html'|url }}" title="Sitemap" accesskey="I">index</a>
             </li>
             {% if page and page.next_page %}<li class="right">
-                <a href="{{ page.next_page.url }}" title="{{ page.next_page.title }}" accesskey="N">next</a> |
+                <a href="{{ page.next_page.url|url }}" title="{{ page.next_page.title }}" accesskey="N">next</a> |
             </li>{% endif %}
             {% if page and page.previous_page %}<li class="right">
-                <a href="{{ page.previous_page.url }}" title="{{ page.previous_page.title }}" accesskey="P">previous</a> |
+                <a href="{{ page.previous_page.url|url }}" title="{{ page.previous_page.title }}" accesskey="P">previous</a> |
             </li>{% endif %}
-            {% if config.theme.icon %}<li><img src="{{ base_url }}/{{ config.theme.icon }}"
+            {% if config.theme.icon %}<li><img src="{{ config.theme.icon|url }}"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>{% endif %}
             <li class="nav-item nav-item-0">
-                <a href="{{ nav.homepage.url }}">{{ config.site_name }} {{ config.theme.release }} documentation</a> &#187;
+                <a href="{{ nav.homepage.url|url }}">{{ config.site_name }} {{ config.theme.release }} documentation</a> &#187;
             </li>
             {%- if page and not page.is_homepage %}
                 {%- for item in nav %}
@@ -73,8 +75,8 @@
         <div class="sphinxsidebarwrapper">
             {%- block sidebarlogo %}
             {%- if config.theme.logo %}
-            <p class="logo"><a href="{{ nav.homepage.url }}">
-              <img class="logo" src="{{ base_url }}/{{ config.theme.logo }}" alt="Logo"/>
+            <p class="logo"><a href="{{ nav.homepage.url|url }}">
+              <img class="logo" src="{{ config.theme.logo|url }}" alt="Logo"/>
             </a></p>
             {%- endif %}
             {%- endblock %}
@@ -92,14 +94,14 @@
             {% if page and page.previous_page %}
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="{{ page.previous_page.url }}" title="previous page">{{ page.previous_page.title }}</a>
+                <a href="{{ page.previous_page.url|url }}" title="previous page">{{ page.previous_page.title }}</a>
             </p>
             {%- endif %}
 
             {% if page and page.next_page %}
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="{{ page.next_page.url }}" title="next page">{{ page.next_page.title }}</a>
+                <a href="{{ page.next_page.url|url }}" title="next page">{{ page.next_page.title }}</a>
             </p>
             {%- endif %}
             {%- endblock %}
@@ -120,7 +122,7 @@
             {%- if config.plugins.search %}
             <div id="searchbox" style="display: none" role="search">
                 <h3>Quick search</h3>
-                <form class="search" action="{{ base_url }}/search.html" method="get">
+                <form class="search" action="{{ 'search.html'|url }}" method="get">
                     <div><input type="text" name="q" placeholder="Search docs" /></div>
                     <div><input type="submit" value="Go" /></div>
                 </form>
@@ -141,10 +143,10 @@
         {% if page and page.is_homepage %}<meta name="description" content="{{ config['site_description'] }}">{% endif %}
         {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
         {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
-        <link rel="shortcut icon" href="{{ base_url }}/favicon.ico">
-        <link rel="search" title="Search" href="{{ base_url }}/search.html" />
-        {% if page and page.next_page %}<link rel="next" title="{{ page.next_page.title }}" href="{{ page.next_page.url }}" />{% endif %}
-        {% if page and page.previous_page %}<link rel="prev" title="{{ page.previous_page.title }}" href="{{ page.previous_page.url }}" />{% endif %}
+        <link rel="shortcut icon" href="{{ 'favicon.ico'|url }}">
+        <link rel="search" title="Search" href="{{ 'search.html'|url }}" />
+        {% if page and page.next_page %}<link rel="next" title="{{ page.next_page.title }}" href="{{ page.next_page.url|url }}" />{% endif %}
+        {% if page and page.previous_page %}<link rel="prev" title="{{ page.previous_page.title }}" href="{{ page.previous_page.url|url }}" />{% endif %}
       {%- endblock %}
 
       {%- block htmltitle %}
@@ -152,17 +154,16 @@
       {%- endblock %}
 
       {%- block styles %}
-        <link rel="stylesheet" href="{{ base_url }}/static/nature.css" type="text/css" />
-        <link rel="stylesheet" href="{{ base_url }}/static/pygments.css" type="text/css" />
-        {%- for path in extra_css %}
-        <link rel="stylesheet" href="{{ path }}" type="text/css" />
+        <link rel="stylesheet" href="{{ 'static/nature.css'|url }}" type="text/css" />
+        <link rel="stylesheet" href="{{ 'static/pygments.css'|url }}" type="text/css" />
+        {%- for path in config.extra_css %}
+        <link rel="stylesheet" href="{{ path|url }}" type="text/css" />
         {%- endfor %}
       {%- endblock %}
 
       {%- block libs %}
-        <script type="text/javascript" src="{{ base_url }}/static/jquery.js"></script>
-        <script type="text/javascript" src="{{ base_url }}/static/underscore.js"></script>
-        <!-- <script type="text/javascript" src="{{ base_url }}/static/doctools.js"></script> -->
+        <script type="text/javascript" src="{{ 'static/jquery.js'|url }}"></script>
+        <script type="text/javascript" src="{{ 'static/underscore.js'|url }}"></script>
       {%- endblock %}
 
       {%- block analytics %}
@@ -206,14 +207,14 @@
 {%- block footer %}
         <div class="footer" role="contentinfo">
         {%- if config.copyright %}{{ config.copyright }}{% if config.site_author %}, {{ config.site_author }}{% endif %}.{% endif %}
-        Created using <a href="http://www.mkdocs.org/">MkDocs</a> {{ mkdocs_version }}.
+        Created using <a href="https://www.mkdocs.org/">MkDocs</a> {{ mkdocs_version }}.
         </div>
 {%- endblock %}
 
 {%- block scripts %}
         <script>var base_url = '{{ base_url }}';</script>
-        {%- for path in extra_javascript %}
-        <script src="{{ path }}"></script>
+        {%- for path in config.extra_javascript %}
+        <script src="{{ path|url }}"></script>
         {%- endfor %}
 {%- endblock %}
 

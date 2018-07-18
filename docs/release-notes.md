@@ -2,6 +2,7 @@
 
 ## Development Version
 
+* Update for MkDocs version 1.0.
 * Ensure tables styles get applied to Markdown tables.
 
 ## Version 0.2.1 (2017/12/01)

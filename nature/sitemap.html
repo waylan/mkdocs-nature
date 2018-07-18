@@ -3,7 +3,7 @@
 {%- macro page_item(item) %}
     <li>
     {%- if item.url %}
-        <a href="{{ item.url }}">{{ item.title }}</a>
+        <a href="{{ item.url|url }}">{{ item.title }}</a>
     {%- else %}
         {{ item.title }}
     {%- endif %}
