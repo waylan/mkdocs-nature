@@ -61,7 +61,7 @@ theme:
 Assign the URL for your repository to this setting to include a link on each
 page. See MkDocs' [documentation][1] for more details.
 
-[1]: http://www.mkdocs.org/user-guide/configuration/#repo_url
+[1]: https://www.mkdocs.org/user-guide/configuration/#repo_url
 
 ### edit_uri
 
@@ -70,7 +70,7 @@ When set, an "edit this page" link is included on each page. Note that if the
 configured and does not need to be set manually. See MkDocs' [documentation][2]
 for more details.
 
-[2]: http://www.mkdocs.org/user-guide/configuration/#edit_uri
+[2]: https://www.mkdocs.org/user-guide/configuration/#edit_uri
 
 ### copyright
 
@@ -128,8 +128,8 @@ markdown_extensions:
 !!! attention
 
     See the Admonition Extension [documentation][3] for specifics on the syntax.
-    
-[3]: https://pythonhosted.org/Markdown/extensions/admonition.html#syntax
+
+[3]: https://python-markdown.github.io/extensions/admonition#syntax
 
 ## Code Highlighting
 

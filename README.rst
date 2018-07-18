@@ -26,6 +26,6 @@ Configure your MkDocs project to use the theme by setting the ``theme.name`` to 
 For a list of supported variables which can be set in the config, see the
 documented `features`_.
 
-.. _MkDocs: http://www.mkdocs.org/
+.. _MkDocs: https://www.mkdocs.org/
 .. _features: https://waylan.github.io/mkdocs-nature/features/
 .. _documentation: https://waylan.github.io/mkdocs-nature/

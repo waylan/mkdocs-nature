@@ -34,8 +34,8 @@ include the full error and traceback.
 
 [Source Code]: https://github.com/waylan/mkdocs-nature
 [Issue Tracker]: https://github.com/waylan/mkdocs-nature/issues
-[MkDocs Documentation]: http://mkdocs.org
-[Jinja Documentation]: http://jinja.pocoo.org/
+[MkDocs Documentation]: https://mkdocs.org
+[Jinja Documentation]: https://jinja.pocoo.org/
 [Sphinx Source]: https://github.com/sphinx-doc/sphinx/tree/master/sphinx/themes
 [Sphinx theme]: http://www.sphinx-doc.org/en/stable/theming.html?highlight=nature#builtin-themes
 [PyPA Code of Conduct]: https://www.pypa.io/en/latest/code-of-conduct/

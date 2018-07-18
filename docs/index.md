@@ -30,5 +30,5 @@ documented [features](features.md).
     - [Release Notes](release-notes.md)
 
 
-[MkDOcs]: http://mkdocs.org
+[MkDOcs]: https://mkdocs.org
 [Sphinx theme]: http://www.sphinx-doc.org/en/stable/theming.html?highlight=nature#builtin-themes
