@@ -1,5 +1,9 @@
 # Release Notes
 
+## Version 0.3.1 (2018/08/03)
+
+* Fix typo in `base.html` template.
+
 ## Version 0.3 (2018/08/03)
 
 * Update for MkDocs version 1.0.
