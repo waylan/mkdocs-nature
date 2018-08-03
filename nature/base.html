@@ -9,7 +9,7 @@
             {{ item.title }}
         {%- endif %}
          &#187; </li>
-        {%- if item.chidlren %}
+        {%- if item.children %}
             {%- for child in item.children %}
                 {{ nav_item(child) }}
             {%- endfor %}
