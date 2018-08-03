@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.2.1'
+VERSION = '0.3'
 
 with open('README.rst', mode='r') as fd:
     long_description = fd.read()
@@ -16,7 +16,7 @@ setup(
     author_email='waylan.limberg@icloud.com',
     packages=find_packages(),
     include_package_data=True,
-    install_requires=['mkdocs>=0.17'],
+    install_requires=['mkdocs>=1.0'],
     entry_points={
         'mkdocs.themes': [
             'nature = nature',

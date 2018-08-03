@@ -1,6 +1,6 @@
 # Release Notes
 
-## Development Version
+## Version 0.3 (2018/08/03)
 
 * Update for MkDocs version 1.0.
 * Ensure tables styles get applied to Markdown tables.
