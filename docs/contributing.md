@@ -34,7 +34,7 @@ include the full error and traceback.
 
 [Source Code]: https://github.com/waylan/mkdocs-nature
 [Issue Tracker]: https://github.com/waylan/mkdocs-nature/issues
-[MkDocs Documentation]: https://mkdocs.org
+[MkDocs Documentation]: https://www.mkdocs.org
 [Jinja Documentation]: https://jinja.pocoo.org/
 [Sphinx Source]: https://github.com/sphinx-doc/sphinx/tree/master/sphinx/themes
 [Sphinx theme]: http://www.sphinx-doc.org/en/stable/theming.html?highlight=nature#builtin-themes
