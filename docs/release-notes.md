@@ -1,5 +1,9 @@
 # Release Notes
 
+## Version 0.4 (2020/04/09)
+
+* Account for code tags in codehilite output.
+
 ## Version 0.3.1 (2018/08/03)
 
 * Fix typo in `base.html` template.
