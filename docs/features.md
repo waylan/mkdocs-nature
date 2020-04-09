@@ -154,9 +154,11 @@ Markdown files.
 
 For example, by using the following Markdown:
 
-    ```javascript
-    alert("A JavaScript Alert!");
-    ```
+````text
+```javascript
+alert("A JavaScript Alert!");
+```
+````
 
 Your codeblock will render as:
 
