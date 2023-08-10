@@ -57,13 +57,13 @@
     </div>
 {%- endmacro %}
 
-{%- macro toc_item(item) %}
+{%- macro toc_item(item, depth=6) %}
     <li>
         <a class="reference internal" href="{{ item.url }}">{{ item.title }}</a>
-        {%- if item.children %}
+        {%- if item.level < depth and item.children %}
         <ul>
         {%- for child in item.children %}
-            {{ toc_item(child) }}
+            {{ toc_item(child, depth) }}
         {%- endfor %}
         </ul>
         {%- endif %}
@@ -82,10 +82,11 @@
             {%- endblock %}
 
             {%- if page and page.toc %}
+            {%- set toc_depth = page.meta.toc_depth|int() if page.meta.toc_depth is defined else 6 %}
             <h3><a href="index.html">Table Of Contents</a></h3>
             <ul>
             {%- for item in page.toc %}
-                {{ toc_item(item) }}
+                {{ toc_item(item, toc_depth) }}
             {%- endfor %}
             </ul>
             {%- endif %}

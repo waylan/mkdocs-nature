@@ -86,6 +86,21 @@ copyright: "Copyright &copy; 2017"
 Assign the name to be included with the copyright notice on each page. This
 setting is ignored if `copyright` is not also set.
 
+## MetaData Variables
+
+In addition to the [default metadata variables][meta] supported by MkDocs, the
+McDocs-Nature theme includes support for the following variables defined in a
+page's metadata.
+
+[meta]: https://www.mkdocs.org/user-guide/writing-your-docs/#meta-data
+
+### `toc_depth`
+
+Set the depth of the table of contents to a unique value for a specific page.
+Must be an integer. Defaults to `6`. Note that if the configuration option of
+the same name is set for the `toc` Markdown extension, then this option must be
+set to a lower value to have any effect.
+
 ## Search
 
 The MkDocs-Nature theme includes support for MkDocs search plugin. As long as
