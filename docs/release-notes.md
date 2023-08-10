@@ -1,5 +1,9 @@
 # Release Notes
 
+## Version 0.5 (2023/08/10)
+
+* Add support for a page specific `toc_depth` setting.
+
 ## Version 0.4 (2020/04/09)
 
 * Account for code tags in codehilite output.
