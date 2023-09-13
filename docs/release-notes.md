@@ -1,5 +1,9 @@
 # Release Notes
 
+## Version 0.6 (2023/09/13)
+
+* Strip tags from page title.
+
 ## Version 0.5 (2023/08/10)
 
 * Add support for a page specific `toc_depth` setting.

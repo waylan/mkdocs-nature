@@ -151,7 +151,7 @@
       {%- endblock %}
 
       {%- block htmltitle %}
-        <title>{% if page and page.title %}{{ page.title }} &#8212; {% endif %}{{ config.site_name }} {{ config.theme.release }} documentation</title>
+        <title>{% if page and page.title %}{{ page.title|striptags }} &#8212; {% endif %}{{ config.site_name }} {{ config.theme.release }} documentation</title>
       {%- endblock %}
 
       {%- block styles %}
